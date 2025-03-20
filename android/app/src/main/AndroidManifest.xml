@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="counter_test"
+        android:label="Counter Test"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
