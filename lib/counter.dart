@@ -6,4 +6,10 @@ class Counter {
   void incrementCounter() {
     _counter++;
   }
+
+  void decrementCounter() {
+    if (_counter != 0) {
+      _counter--;
+    }
+  }
 }
