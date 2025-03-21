@@ -12,4 +12,8 @@ class Counter {
       _counter--;
     }
   }
+
+  void resetCounter() {
+    _counter = 0;
+  }
 }
