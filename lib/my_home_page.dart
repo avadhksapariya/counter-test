@@ -49,6 +49,11 @@ class _MyHomePageState extends State<MyHomePage> {
               '${counter.count}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            FloatingActionButton.small(
+              onPressed: () {},
+              tooltip: 'Increment',
+              child: const Icon(Icons.add),
+            ),
           ],
         ),
       ),
@@ -72,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           FloatingActionButton(
+            key: const Key('increment_counter'),
             onPressed: _incrementCounter,
             tooltip: 'Increment',
             child: const Icon(Icons.add),

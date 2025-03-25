@@ -13,7 +13,10 @@ void main() {
       final ctr2 = find.text('1');
       expect(ctr2, findsNothing);
 
-      final incrementBtn = find.byIcon(Icons.add);
+      // final incrementBtn = find.byIcon(Icons.add);
+      final incrementBtn = find.byKey(const Key('increment_counter'));
+      expect(incrementBtn, findsOneWidget);
+
       await widgetTester.tap(incrementBtn);
       await widgetTester.pump();
 
